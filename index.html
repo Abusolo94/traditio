@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <title>Traditio food delivery</title>
+</head>
+<body>
+
+    <div class="platform__btns">
+        <button class="admin">admin</button>
+        <button class="user">User</button>
+    </div>
+
+
+    <div class="main-container admin__container">
+
+        <div class="left-container">
+            <div class="left-top">
+                <h1>Traditio</h1>
+                <p class="slagon">in parta</p>
+              
+
+            </div>
+
+            <div class="left-bottom">
+                <li data-item="orderroom" class="active">
+                  
+                    <i><box-icon name='cart-alt' type='solid' ></box-icon></i>
+                 
+                    <p>in Roon order</p>
+                </li>
+                <li data-item="orderlist">
+                    <i>  <box-icon type='solid' name='playlist'></box-icon></i>
+                  
+                    <p>Order list</p>
+                </li>
+                <li data-item="finance">
+                    <i><box-icon name='credit-card' ></box-icon></i>
+                    
+                    <p>Finance</p>
+                </li>
+                <li data-item="report">
+                    <i><box-icon name='report' type='solid' ></box-icon></i>
+                    
+                    <p>Report</p>
+                </li>
+                <li data-item="ordermenu">
+                    <i>   <box-icon name='food-menu' type='solid' ></box-icon></i>
+                 
+                    <p>order menu</p>
+                </li>
+                <li data-item="aggregaters">
+                    <i> <box-icon type='solid' name='group'></box-icon></i>
+                   
+                    <p>Aggregator</p>
+                </li>
+
+                <li data-item="help">
+                    <i><box-icon name='help-circle' ></box-icon></i>
+                    
+                    <p>Help</p>
+                </li>
+                <li >
+                    <i>  <box-icon name='log-out' ></box-icon></i>
+                 
+                    <p>Signout</p>
+                </li>
+                
+
+            </div>
+
+        </div>
+        <div class="right-container">
+           <div class="right-top">
+            <i class="menu__icon__admin"><box-icon name='menu'></box-icon></i>
+            <div class="login-div">
+                <span>login</span>
+            </div>
+            <div class="storeName">
+                  <i><box-icon name='store'></box-icon></i> 
+                <h1>122345</h1>
+            </div>
+            <div class="status">
+                <span>open</span>
+            </div>
+
+           </div>
+          
+          
+           <div class="right-buttom">
+
+          <section id="orderroom" class="orderroom active">
+            
+            <h2>In order roon</h2>
+            <div class="order_room_info">
+               
+
+               
+                    <div class="card newOder">
+                        <h1>New oders</h1>
+                        <p>there is any oder available now</p>
+                        <h2>0</h2>
+                    </div>
+                    <div class="card kitchenOrder">
+                        <h1>orders in the kitchen</h1>
+                        <p>there is no any order available in the kitchen</p>
+                        <h2>0</h2>
+                    </div>
+                    <div class="card deliveryOrder">
+                        <h1>order on for dilivery</h1>
+                        <p>there are 2 orders on the way for delivery</p>
+                        <h2>2</h2>
+                    </div>
+                    <div class="card rejectedOrder">
+                        <h1>Rejected oders</h1>
+                        <p>there are Zero orders rejected today</p>
+                        <h2>0</h2>
+                    </div>
+               
+            </div>
+
+            <div class="in__coming__order__infor">
+                <h1>new orders</h1>
+                <button class="new__order__close">close</button>
+                <div class="in__new__oderDetails">
+                    <table>
+                        <thead>
+                           
+                            <tr>
+                                <td>Oder id</td>
+                                <td>Date</td>
+                                <td>Aggregator</td>
+                                <td>Customee No</td>
+                                <td>Location</td>
+                                <td>Amount</td>
+                                <td>Status</td>
+    
+                            </tr>
+                           
+                           
+                        </thead>
+                        <tbody class="orders__arrays">
+                         
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+
+            <div class="order__display">
+                <h1>Checked order</h1>
+                <button class="close__checked">cLose</button>
+
+             <div class="order__checked">
+                <div class="order__display__top">
+                  
+                </div>
+
+                <div class="order__display__top__bottom">
+                    <h1>Items</h1>
+
+                    <div class="order__list__display">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>order Id</td>
+                                    <td>Item Details</td>
+                                    <td>Quanity</td>
+                                    <td>Unit Price</td>
+                                    <td>Total</td>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr>
+                                    <td>1223993</td>
+                                    <td>I phone 13 pro</td>
+                                    <td>2</td>
+                                    <td>$2344</td>
+                                    <td> $2445</td>
+                                </tr>
+                              
+                              
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td>Grand Total</td>
+                                    <td>45</td>
+                                    <td>$2344</td>
+                                    <td> $2445</td>
+                                </tr>
+
+                            </tfoot>
+                        </table>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+            </div>
+          </section>
+
+          <section id="orderlist" class="order__list">
+            <h1>order List</h1>
+            <div class="date__infor">
+                <div class="from">
+                    <span>From</span>
+                    <input type="date">
+                </div>
+                <div class="from">
+                    <span>To</span>
+                    <input type="date">
+                </div>
+               <button>
+              Generate
+               </button>
+               
+            </div>
+            <div class="order__list__infor">
+                <table>
+                    <thead>
+                       
+                        <tr>
+                            <td>Oder id</td>
+                            <td>Date</td>
+                            <td>Aggregator</td>
+                            <td>Customee No</td>
+                            <td>Location</td>
+                            <td>Amount</td>
+                            <td>Status</td>
+
+                        </tr>
+                       
+                       
+                    </thead>
+                    <tbody >
+                       <tr>
+                        <td>122333</td>
+                        <td>12-07-2024</td>
+                        <td>Jomba mazamir</td>
+                        <td>05674556</td>
+                        <td>4655 kamis</td>
+                        <td>47</td>
+                        <td>pending</td>
+                       </tr>
+                          
+                        
+                    </tbody>
+                </table>
+            </div>
+
+
+          </section>
+
+          <section id="finance" class="finance">
+            <h1>Finance</h1>
+
+            <div class="finance__content">
+
+            <div class="finance__Infor">
+                <div class="cards">
+                    <h1>sales</h1>
+                    <p>1890.383</p>
+                </div>
+                <div class="cards">
+                    <h1>Refund</h1>
+                    <p>56.90</p>
+                </div>
+                <div class="cards">
+                    <h1>Sales projection</h1>
+                    <p>129903</p>
+                </div>
+               
+                
+            </div>
+            <div class="help__infor">
+                <div class="cardz">
+                    <h1>inquiries</h1>
+                </div>
+                <div class="cardz">
+                    <h1>Chat</h1>
+                </div>
+                <div class="cardz">
+                    <h1>Report</h1>
+                </div>
+            </div>
+
+        </div>
+          </section>
+
+          <section id="report" class="report">
+            <h1>Report</h1>
+
+            <div class="report__info">
+                <div class="repor__card">
+                    <h1>Sales</h1>
+                    <p>This report entails all the histrical sales, profits, refund reports</p>
+                    <button>Explore for more</button>
+                </div>
+                <div class="repor__card">
+                    <h1>Aggragators performance</h1>
+                    <p>This report entails all the histrical sales, profits, refund reports
+                        and each order successfully delivered by the aggregators
+                    </p>
+                    <button>Explore for more</button>
+
+                </div>
+                <div class="repor__card">
+                    <h1>Store Performence</h1>
+                    <p>This report will give a clear picture about your store is performing
+                        towords reaction time.
+                    </p>
+                    <button>Explore for more</button>
+                </div>
+
+
+            </div>
+
+          </section>
+          <section id="ordermenu" class="ordermenu">
+            <h1>Order Menu</h1>
+            <div class="order__menu__infor">
+                <div class="list__items">
+                    <li>
+                       
+                        <img src="./chappati.webp" alt="image">
+                        <p>122344</p>
+                        <p> ugsh 2500 </p>
+                        <button>remove</button>
+                    </li>
+                    <li>
+                       
+                        <img src="./chappati.webp" alt="image">
+                        <p>122344</p>
+                        <p> ugsh 2500 </p>
+                        <button>remove</button>
+                    </li>
+                    <li>
+                   
+                        <img src="./chappati.webp" alt="image">
+                        <p>122344</p>
+                        <p> ugsh 2500 </p>
+                        <button>remove</button>
+                    </li>
+                </div>
+
+                <div class="menu__actions">
+                    <button>add items</button>
+                    <button>Edit prices</button>
+                </div>
+               
+
+            </div>
+          </section>
+          <section id="aggregaters" class="aggregaters">
+            <h1>Aggregators/Delivery men</h1>
+
+            <div class="aggregt__infor">
+                <div class="list__aggregators">
+                    <table>
+                        <thead>
+                           
+                            <tr>
+                                <td>Agg id</td>
+                                <td>Agg name</td>
+                                <td>Agg Tel. no</td>
+                                <td>Number of orders</td>
+                                <td>Status</td>
+                                <td>Action</td>
+                                <td>Action2</td>
+    
+                            </tr>
+                           
+                           
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <td>12223432</td>
+                            <td>Waibi Topher</td>
+                            <td>057367994</td>
+                            <td>40</td>
+                            <td>active</td>
+                            <td><button>Delete</button></td>
+                            <td><button>Hold</button></td>
+                           </tr>
+                           <tr>
+                            <td>12223432</td>
+                            <td>Vamba Edgar</td>
+                            <td>057367994</td>
+                            <td>40</td>
+                            <td>active</td>
+                            <td><button>Delete</button></td>
+                            <td><button>Hold</button></td>
+                           </tr>
+                           <tr>
+                            <td>12223432</td>
+                            <td>Kinti Polly</td>
+                            <td>057367994</td>
+                            <td>40</td>
+                            <td>active</td>
+                            <td><button>Delete</button></td>
+                            <td><button>Hold</button></td>
+                           </tr>
+                           
+                           
+                                
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <button class="add__agg">Add aggregator</button>
+
+            </div>
+          </section>
+
+
+          <section id="help" class="help">
+            <h1>Help</h1>
+
+            <div class="help__infor">
+                <div class="help__infor__top">
+
+                <div class="help__infor__top__card">
+                    <select name="helpcatg" id="helpcatg">
+                        <option value="">Select</option>
+                        <option value="">Customer wrong location</option>
+                        <option value="">Customer did not pick the call</option>
+                        <option value="">Order out of my current city</option>
+                        <option value="">Order refund</option>
+                        <option value="">No aggregator available</option>
+                    </select>
+
+                    <div class="input__help">
+                        <span>Others/ specify</span>
+                        <input type="text" placeholder="Please write here your consern">
+                    </div>
+                </div>
+
+                <div class="help__display">
+                    <p>One customer asked to cancel His order</p>
+                    <button>Comfirm</button>
+                </div>
+             
+                </div>
+
+                <div class="help__infor__bottom">
+                    <div class="cards">
+                        <i>   <box-icon name='cog'></box-icon></i>
+                     
+                        <h1>application setting</h1>
+                        <P>Custermise occording to your preference</P>
+
+
+                    </div>
+                    <div class="cards">
+                        <i>    <box-icon name='signal-5' ></box-icon></i>
+                    
+                        <h1>all store connection</h1>
+                        <p>learn how connect with other store/restruants</p>
+
+
+                    </div>
+
+                    <div class="cards">
+                        <i> <box-icon name='git-pull-request' ></box-icon></i>
+                 
+                        <h1>Q & A</h1>
+                        <p>Here are frquently asked questions</p>
+
+
+                    </div>
+
+                </div>
+                
+            </div>
+          </section>
+
+           </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="user__container">
+        <div class="header">
+            <nav>
+            <div class="logo__slagon">
+                <h1>Traditio</h1>
+                <p>in parta</p>
+            </div>
+            <div class="search__input">
+           
+                <input type="search" name="search" id="search" placeholder="Search here...">
+                <button class="search__here">search</button>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <i>     <box-icon class="cart" type='solid' name='cart-download'></box-icon></i>
+                <i  class="money"><box-icon name='money'></box-icon></i>
+                <i class="menu__icon"><box-icon name='menu'></box-icon></i>
+           
+
+            </div>
+
+      
+        
+            </nav>
+
+            <div class="cart__container">
+                <h3 class="itemValus">Your cart</h3>
+                <div class="cart__container__top">
+                    <p>1 items</p>
+                    <i><box-icon name='window-close' class="close__cart" ></box-icon></i>
+
+                </div>
+                <div class="cart__items">
+               
+                 
+                </div>
+
+                <div class="cart__container__bottom">
+                 <div class="bleft">
+                    <p class="itemValue"> (2)item</p>
+
+
+                 </div>
+                 <div class="bright">
+                  <h1 class="stotal" >Sub Total:</h1>
+                  <h1 class="tTotal">Tax:</h1>
+                  <h1 class="dfees">Delivery Fee:</h1>
+                    <h2 class="grandTotal">Grand Total:</h2>
+
+                 </div>
+                 <button class="check__out" >Checkout</button>
+                   
+
+                </div>
+
+            </div>
+
+       
+
+           
+
+        </div>
+        <div class="product__section">
+            <h1>our Products</h1>
+    
+            <div class="product__details">
+    
+             
+            </div>
+        </div>
+
+        <div class="traditio__pay__container">
+            <button class="pay__close__btn">close</button>
+
+            <div class="money__ad">
+                <div class="moneyCard">
+                    <img src="./send money.avif" alt="">
+                    <div class="information">
+                        <h1>send money instantly</h1>
+                        <p>safe and secure transfe</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="balance__infor">
+                <div class="balance__infor__card">
+                <div class="available">
+                    <h1>Available to transfer</h1>
+                    <div class="available__info">
+                        <h2>$234</h2>
+                        <button>+ ADD</button>
+                    </div>
+                </div>
+                <hr>
+                <h2 class="total__balance">Total Balance $344</h2>
+            </div>
+
+            </div>
+            <div class="money__action__btn">
+                <div class="bts">
+                    <button>Send</button>
+                    <button>Request</button>
+
+                </div>
+             
+
+            </div>
+            <div class="transaction__details">
+                <div class="transaction__details__card">
+                    <h1>Send to</h1>
+                    <div class="transaction__devices">
+                       <img src="./no money.avif" alt="">
+                       <p>no recent transaction</p>
+       
+                    </div>
+
+                </div>
+            
+
+
+            </div>
+
+        </div>
+
+
+        <div class="place__order__container">
+            <i class="back__btn"><box-icon name='left-arrow-alt' ></box-icon></i>
+            <div class="place__order__subcontainer">
+            <div class="half">
+                <div class="top__cont cards">
+                    <div class="address">
+                        <h1>address</h1>
+                        <button>switch pick piont</button>
+                    </div>
+                    <div class="add__details">
+                        <i><box-icon name='map' ></box-icon></i>
+                       <div class="deliver__to">
+                        <p>Delive to</p>
+                        <p>ahah hsdhdfd ajd 1223</p>
+                       </div>
+                    </div>
+                    <div class="inputt">
+                        <input type="checkbox" name="" id="del" placeholder="Deliver at my door">
+                        <span>Deliver at my door</span>
+
+                    </div>
+                   
+                </div>
+
+                <div class="items__information cards">
+                    <div class="shipment">
+                        <h1>Shipment:  <span class="itemValuess">1 of 1 (1 item) </span></h1>
+                        <span>Express</span>
+                    </div>
+                    <div class="product__list__details">
+                     
+                       
+                    </div>
+    
+                </div>
+            </div>
+
+         
+
+            <div class="half second__half">
+                <div class="payment__information">
+                    <li>
+                        <p>Debit/CreditCard</p>
+                        <i><box-icon name='credit-card'></box-icon></i>
+                    </li>
+                    <li>
+                        <p>Cash On Delivery</p>
+                        <i><box-icon name='money-withdraw'></box-icon></i>
+                    </li>
+                    <li>
+                        <p>Traditio Pay</p>
+                        <i><box-icon name='money'></box-icon></i>
+                    </li>
+                    
+                </div>
+
+                <div class="order__summary">
+                    <h1>order summary</h1>
+                    <div class="summmary__details">
+                    <h2>Sub total <span class="subtt">$0</span></h2>
+                    <h2>Shipping feee <span class="shiping">$0</span></h2>
+                    <hr>
+                    <h3>Total incl. VAT <span class="overall__total">$0</span></h3>
+                    </div>
+                    
+                </div>
+
+            </div>
+           
+
+              
+                <div class="oder__action__btn">
+                    <button class="selectPaymentBtn"><i><box-icon name='right-arrow-alt' ></box-icon></i> Select payment</button>
+                    <div class="numberOfPayment">
+                        <h1 > <span  class="itemUnites">0</span></h1>
+                        <h1 > <span class="totalFinnal">0</span></h1>
+                    </div>
+                </div>
+           
+
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+</body>
+</html>
