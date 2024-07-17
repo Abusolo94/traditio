@@ -746,7 +746,7 @@
 
 .list__aggregators  table{
     background: white;
-    padding: 10px;
+    padding: 2px;
     font-size: 20px;
    
 }
@@ -761,7 +761,7 @@
 }
 .list__aggregators  table td{
     width: 200px;
-    padding: 10px;
+    padding: 2px;
     text-align: center;
     box-shadow: 1px 1px 1px 1.55px black;
  
@@ -893,10 +893,7 @@
   
 
  @media screen and (max-width: 1010px) {
-    .main-container{
-        background: red;
-
-    }
+  
     .slagon{
         display: none;
     }
@@ -1023,27 +1020,27 @@
      .in__coming__order__infor{
         width: 100%;
      }
-     .menu__icon__admin{
-        display: block;
-        background: rgb(0, 4, 255);
-    }
+    
   }
 
  @media screen and (max-width: 550px) { 
-    .menu__icon__admin{
-        display: block;
-        background: rgb(0, 255, 17);
-    }
+  
     .order_room_info{
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
+    .order_room_info  .card h1{
+        font-size: 20px;
+    }
+    .order_room_info  .card p{
+        font-size: 15px;
+    }
     .in__new__oderDetails table thead td{
-        font-size: 13px;
+        font-size: 11px;
     }
     .in__new__oderDetails table tbody td{
-        font-size: 13px;
+        font-size: 11px;
     }
     .order__list{
         width: 100%;
@@ -1051,39 +1048,45 @@
     .date__infor input{
         padding: 4px 6px;
         font-size: 15px;
-        width: 100px;
+        width: 75px;
     }
     .date__infor span{
-        font-size: 15px;
+        font-size: 12px;
     }
     .date__infor button{
-        width: 90px;
-        font-size: 15px;
+        width: 75px;
+        font-size: 11px;
     }
     .order__list__infor{
         width: 100%;
     }
+    .order__list__infor table thead{
+        padding: 2px;
+    }
     .order__list__infor table thead td{
-        font-size: 11px;
+        font-size: 12px;
+        padding: 2px;
     }
     .order__list__infor table tbody td{
-        font-size: 11px;
+        font-size: 12px;
+        padding: 2px;
 
     }
-    .finance__Infor .cards{
-        width: 200px;
-    }
-    .finance__Infor .cards h1{
-        font-size: 25px;
-    }
-    .finance__Infor .cards{
-        width: 120px;
-    }
+    
     .finance__Infor .cards h1{
         font-size: 20px;
     }
+    .finance__Infor .cards h1{
+        font-size: 17px;
+    }
+    .finance__Infor .cards{
+        width: 100px;
+    }
+    .finance__Infor .cards h1{
+        font-size: 15px;
+    }
     .help__infor .cardz h1{
-        font-size: 25px;
+        font-size: 20px;
     }
    .report .report__info{
     display: flex;
@@ -1127,13 +1130,13 @@
     }
 
     .list__aggregators table thead td{
-        font-size: 11px;
+        font-size: 10px;
     }
     .list__aggregators table tbody td{
-        font-size: 11px;
+        font-size: 10px;
     }
     .list__aggregators table tbody td button{
-        font-size: 12px;
+        font-size: 10px;
     }
     .add__agg{
         font-size: 17px;
@@ -1144,12 +1147,12 @@
     }
 
     .help__infor__bottom .cards h1{
-        font-size: 15px;
+        font-size: 12px;
         text-align: center ;
     }
     .help__infor__bottom .cards p{
         text-align: center;
-        font-size: 12px;
+        font-size: 11px;
         color: #fff;
     }
   
@@ -1163,8 +1166,56 @@
         font-size: 12px;
      }
      .help__display p{
-        font-size: 16px;
+        font-size: 12px;
      }
+     .login-div{
+        margin-right: 10px;
+     }
+     .storeName h1{
+        font-size: 20px;
+     }
+     .order__display__top{
+        flex-direction: column;
+     }
+     .order__display__top__left, .order__display__top__right{
+        flex-direction: column;
+
+     } 
+   
+     .order__display__top__left .cardd, .order__display__top__right .cardd{
+        gap: 1px;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+     }
+
+     .order__display__top__left h1, .order__display__top__right h1{
+        font-size: 8px;
+     }
+     .order__display__top__left span,  .order__display__top__right span{
+        font-size: 8px;
+
+     }
+     .order__display{
+        width: 90%;
+        padding: 6px;
+        height: 100%;
+     }
+
+     .order__list__display table thead td{
+        font-size: 8px;
+     }
+    .order__list__display table tbody td{
+        font-size: 8px;
+    }
+    .order__list__display table tfoot td{
+        font-size: 8px;
+    }
+    .platform__btns{
+        right: 6px;
+        z-index: 4;
+    }
+  
    
  }
 

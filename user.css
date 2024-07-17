@@ -809,9 +809,7 @@ nav i{
 
 
  @media screen and (max-width: 1010px) {
-    body{
-        background: red;
-    }
+  
 
     .search__input{
         position: absolute;
@@ -829,9 +827,7 @@ nav i{
     
  }
  @media screen and (max-width: 750px) {
-    body{
-        background-color: green;
-    }
+  
     .header{
         padding: 10px 2rem;
     }
@@ -953,19 +949,19 @@ nav i{
      
  
   @media screen and (max-width: 550px) {
-   body{
-    background: blue;
-   }
+    .place__order__container{
+        width: 350px;
+    }
 
    .place__order__container .half .cards{
     height: 200px;
-    width: 400px;
+    width: 350px;
  }
  .shipment h1{
-    font-size: 20px;
+    font-size: 15px;
  }
     .oder__action__btn button{
-        width: 400px;
+        width: 350px;
 
     }
 
@@ -978,6 +974,9 @@ nav i{
     
     .product__section{
         margin-top: 6.88rem;
+    }
+    .numberOfPayment{
+        width: 350px;
     }
   }
      
