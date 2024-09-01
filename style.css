@@ -18,6 +18,10 @@
 
     padding: 5px;
     gap: 1.33rem;
+    display: none;
+}
+.platform__btns.active{
+    display: block;
 }
 .platform__btns button{
     background: black;

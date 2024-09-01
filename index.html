@@ -10,6 +10,152 @@
 </head>
 <body>
 
+
+    <div class="landing__Page__container">
+        <div class="landing__page__details">
+            <h1 class="loggo">Traditio | <span>ina Parta</span></h1>
+            <h1 class="welcome">Welecome to traditio where technology and service delivery prevails</h1>
+            <p>we are happy to serve your </p>
+            <button class="get__started__btn">Get started</button>
+        </div>
+
+        <div class="registration__form__info">
+            <h1  class="alomst__there">You are almost there</h1>
+       
+            <div class="platform__agenda">
+                <h1>How do want to use this application</h1>
+                <div class="action__buttons">
+                    <button class="minstrator">administrator</button>
+                    <button class="loginn">login</button>
+                    <button class="custmer">Customer</button>
+                </div>
+            </div>
+    
+            <div class="registration__form customer">
+                <h1>Register/Customer</h1>
+
+                <div class="form">
+                    <div class="card">
+                        <div class="names">
+                            <span>Full Name</span>
+                            <input type="text" id="fullName">
+                        </div>
+                        <div class="names">
+                            <span>Contanct</span>
+                            <input type="text" id="contact">
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <div class="names">
+                            <span>Email</span>
+                            <input type="email" id="yemail">
+                        </div>
+                        <div class="names">
+                            <span>Address</span>
+                            <input type="text" id="address">
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <div class="names">
+                            <span>Passwor</span>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="names">
+                            <span>Rept password</span>
+                            <input type="password" id="cpassword">
+                        </div>
+                      
+                    </div>
+                
+                </div>
+                <button onclick="renderingCustomerData()">comfirm</button>
+            </div>
+
+            <div class="registration__form administrator">
+                <h1>Register/Administrator</h1>
+
+                <div class="form">
+                    <div class="card">
+                        <div class="names">
+                            <span>Store Name</span>
+                            <input type="text" id="afullName">
+                        </div>
+                        <div class="names">
+                            <span>Store ID</span>
+                            <input type="text" id="storeID">
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <div class="names">
+                            <span>Email</span>
+                            <input type="email" id="ayemail">
+                        </div>
+                        <div class="names">
+                            <span>Address</span>
+                            <input type="text" id="aaddress">
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <div class="names">
+                            <span>User name</span>
+                            <input type="text" id="auserName">
+                        </div>
+                        <div class="names">
+                            <span>Store TIN</span>
+                            <input type="text" id="astoreTin">
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <div class="names">
+                            <span>Password</span>
+                            <input type="password" id="rrpassword">
+                        </div>
+                        <div class="names">
+                            <span>Rept password</span>
+                            <input type="password" id="rpassword">
+                        </div>
+                      
+                    </div>
+                
+                </div>
+                <button onclick="renderingAdminData()">comfirm</button>
+            </div>
+            <div class="login__form">
+                <h1>Login</h1>
+
+                <div class="form">
+                  
+                    <div class="card">
+                        <div class="names">
+                            <span>Email</span>
+                            <input type="email" id="lyemail">
+                        </div>
+                        <div class="names">
+                            <span>Password</span>
+                            <input type="password" id="lpassword">
+                        </div>
+                      
+                    </div>
+                  
+                    </div>
+                    <button onclick="renderingLoginData()">comfirm</button>
+                </div>
+
+              
+    
+            </div>
+        </div>
+       
+
+    </div>
+
+
+
     <div class="platform__btns">
         <button class="admin">admin</button>
         <button class="user">User</button>
@@ -517,9 +663,11 @@
                     <li><a href="">Product</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <i>     <box-icon class="cart" type='solid' name='cart-download'></box-icon></i>
+                <i><box-icon class="cart" type='solid' name='cart-download'></box-icon></i>
                 <i  class="money"><box-icon name='money'></box-icon></i>
                 <i class="menu__icon"><box-icon name='menu'></box-icon></i>
+                <span class="order-numbers"></span>
+
            
 
             </div>

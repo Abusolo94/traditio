@@ -1,12 +1,141 @@
 
+const landingPageContainer = document.querySelector('.landing__Page__container')
+const admin__container = document.querySelector('.main-container')
+const user__container = document.querySelector('.user__container')
+
+
+
+const landing__page = document.querySelector('.landing__page__details')
+
+const get__started__btn = document.querySelector('.get__started__btn')
+const registration__container = document.querySelector('.registration__form__info')
+const customerForm = document.querySelector('.customer')
+const adminForm = document.querySelector('.administrator')
+const loginForm = document.querySelector('.login__form')
+const action__buttons = document.querySelector('.action__buttons')
+const allCustomerInput = document.querySelectorAll('.customer input')
+
+let customer__data = []
+let admin__date = []
+let login__data = []
+
+get__started__btn.addEventListener('click', ()=>{
+    landing__page.classList.add('active')
+    registration__container.classList.add('active')
+})
+action__buttons.addEventListener('click', (e)=>{
+    if(e.target.className === 'minstrator'){
+        adminForm.classList.add('active')
+        loginForm.classList.remove('active')
+        customerForm.classList.add('active')
+
+    }
+    if(e.target.className === 'loginn'){
+        loginForm.classList.add('active')
+        customerForm.classList.add('active')
+        adminForm.classList.remove('active')
+        
+    }
+    if(e.target.className === 'custmer'){
+        customerForm.classList.remove('active')
+        loginForm.classList.remove('active')
+        adminForm.classList.remove('active')
+        
+    }
+})
+
+
+function renderingCustomerData(){
+    const fullname = document.getElementById('fullName')
+    const contact = document.getElementById('contact')
+    const email = document.getElementById('yemail')
+    const address = document.getElementById('address')
+    const password = document.getElementById('password')
+    const cpassword = document.getElementById('cpassword')
+    // const allCustomerInput = document.querySelectorAll('.customer input')
+
+    const customers ={
+        fname : fullname.value,
+        conts : contact.value,
+        cemail :email.value,
+        caddress : address.value,
+        cspassware : password.value,
+        confPass : cpassword.value
+    }
+    customer__data.push({...customers})
+    console.log(customer__data)
+
+    allCustomerInput.forEach(input => input.value = "")
+    storeData()
+   
+  
+
+}
+function renderingAdminData(){
+    const storeName = document.getElementById('afullName')
+    const storeId = document.getElementById('storeID')
+    const storeEmail = document.getElementById('ayemail')
+    const storeAddress = document.getElementById('aaddress')
+    const storeUsername = document.getElementById('auserName')
+    const storeTIN = document.getElementById('astoreTin')
+    const storePassword = document.getElementById('rrpassword')
+    const storeCpassword = document.getElementById('rpassword')
+    const allAdminInput = document.querySelectorAll('.administrator input')
+    
+
+    const admins = {
+        storename : storeName.value,
+        storeid : storeId.value,
+        storeemail : storeEmail.value,
+        storeadress : storeAddress.value,
+        username : storeUsername.value,
+        storetin : storeTIN.value,
+        storepassword : storePassword.value,
+        confirmpass: storeCpassword.value
+
+
+    }
+    admin__date.push({...admins})
+    allAdminInput.forEach(input => input.value = "")
+  
+
+}
+function renderingLoginData(){
+    const loginEmail = document.getElementById('lyemail')
+    const loginPassword = document.getElementById('lpassword')
+    const allLoginInput = document.querySelectorAll('.login__form input')
+
+    const login = {
+        loginemaill : loginEmail.value,
+        loginpassword : loginPassword.value,
+
+    }
+    login__data.push({...login})
+    allLoginInput.forEach(input => input.value = "")
+    landingPageContainer.classList.add('active')
+    user__container.classList.add('active')
+    platFormBtn.classList.add('active')
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 const menuContainer = document.querySelector('.left-bottom')
 const menuItem = document.querySelectorAll('.left-bottom li')
 const sectionItem = document.querySelectorAll('section')
 const product__btn = document.querySelectorAll('.add__button')
 
 
-const admin__container = document.querySelector('.main-container')
-const user__container = document.querySelector('.user__container')
+
 const platFormBtn = document.querySelector('.platform__btns')
 const orderRoomCard = document.querySelector('.order_room_info')
 const newOderDisplay = document.querySelector('.in__coming__order__infor')
@@ -38,7 +167,7 @@ platFormBtn.addEventListener('click', (e)=>{
 
     }else if(e.target.className === 'user'){
         admin__container.classList.remove('active')
-        user__container.classList.remove('active')
+        user__container.classList.add('active')
 
     }
 })
@@ -155,7 +284,7 @@ function renderProductItem(prodItem){
             <div class="product__card">
                 <div class="details">
                     <h1 class="pname">${proItem.title}</h1>
-                    <img src="${proItem.images}" alt="">
+                    <img src="${proItem.thumbnail}" alt="">
                     <p class="descript">${proItem.description}</p>
                     <p class="price">${proItem.price}</p>
                 </div>
@@ -223,7 +352,7 @@ function renderCart(){
 
           <div class="cart__items__card">
                         <div class="products__details">
-                            <img src="${item.images}" alt="image">
+                            <img src="${item.thumbnail}" alt="image">
                             <div class="paname__descrip">
                                 <h1>${item.title}</h1>
                                 <p>${item.price}</p>
@@ -300,6 +429,7 @@ function updatingCart(){
 const taxFee = document.querySelector('.tTotal')
 const deliverFee = document.querySelector('.dfees')
 const grandTotal = document.querySelector('.grandTotal')
+const numberOfItems = document.querySelector('.order-numbers')
 
 
     let TotalPrice = 0; let unitValue = 0 ;
@@ -318,6 +448,7 @@ const grandTotal = document.querySelector('.grandTotal')
 
     itemValueone.textContent = `${unitValue} items`
     itemValuetwo.textContent=` ${unitValue} items` 
+    numberOfItems.textContent = `${unitValue}`
     subTotal.textContent = `Sub total $${TotalPrice.toFixed(2)}`
     taxFee.textContent =  `Tax $${tax.toFixed(2)}`
     deliverFee.textContent=`Deliver fee $${dFee.toFixed(2)}`
@@ -404,6 +535,7 @@ function updatingShipmentSimmary() {
   const uniteValue = document.querySelector(".itemUnites");
   const totalFinal = document.querySelector(".totalFinnal");
 
+
   let subTotal = 0;
   let unitValue = 0;
   let VAT = 0;
@@ -432,6 +564,8 @@ function updatingShipmentSimmary() {
 
   unitValuess.textContent = `${unitValue} of ${unitValue} (${unitValue} items)`;
   uniteValue.textContent = `${unitValue} items`;
+
+
 }
 
 
@@ -447,6 +581,12 @@ selectPayBtn.addEventListener('click',  ()=>{
     
  
 })
+
+
+
+
+
+
  
 const orderlist__info = document.querySelector('.orders__arrays')
 let orderRoom = []
@@ -597,3 +737,31 @@ function  sendingOder(){
 
         }
 
+
+
+        function storeData(){
+            localStorage.setItem('info', customerForm.innerHTML)
+
+
+        }
+        function showStoredData(){
+       
+
+            customerForm.innerHTML = localStorage.getItem('info')
+         
+
+           
+
+
+        }
+        showStoredData()
+
+
+
+        const nums = [1,2,3,4,5,6,7]
+     
+       
+
+        const num = nums.map(no => parseInt(no, 10))
+        console.log(num)
+  

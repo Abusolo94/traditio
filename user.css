@@ -6,15 +6,190 @@ body{
 
 }
 
-.user__container{
-    padding: 5px 4rem;
+
+.landing__Page__container{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
    
 }
-.user__container.active{
+.landing__Page__container.active{
     display: none;
+}
+.landing__page__details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+}
+.landing__page__details.active{
+    display: none;
+}
+.registration__form__info{
+    display: none;
+}
+.registration__form__info.active{
+    display: block;
+}
+.loggo{
+    background: #3b3a3a;
+    color: lightblue;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+
+}
+.loggo span{
+    font-size: 20px ;
+    color: white;
+}
+
+.welcome{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+}
+.landing__page__details p{
+    font-size: 20px;
+    margin-top: 2rem;
+    letter-spacing: 4px;
+    color: rgb(3, 50, 66);
+}
+.get__started__btn{
+    margin-top: 2rem;
+    padding: 13px 30px;
+    font-size: 25px;
+    border: none;
+    background: rgb(3, 50, 66);
+    color: lightskyblue;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 2px 4px white;
+    cursor: pointer;
+}
+.get__started__btn:hover{
+    background: black;
+    color: #f8f6f6;
+    box-shadow: 0 2px 2px 4px lightskyblue;
+}
+.registration__form__info .alomst__there{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.platform__agenda h1{
+    font-size: 18px;
+    color: #092e36e3;
+    letter-spacing: 3px;
+}
+.platform__agenda{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.action__buttons{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action__buttons button{
+    padding: 10px 25px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    background: rgb(78, 76, 76);
+    color: white;
+    border-radius: 10px;
+}
+.registration__form, .login__form{
+    border: 1px solid lightslategray;
+    margin-top: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.registration__form  h1, .login__form h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(75, 40, 75);
+}
+
+.form .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px;
+}
+.form .card span{
+    font-size: 20px;
+    color: rgb(10, 128, 161);
+}
+.form .card input{
+    padding: 4px 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #cad7fb;
+    
+}
+.login__form button, .registration__form button{
+    padding: 10px 20px;
+    margin-top: 2rem;
+    font-size: 17px;
+    letter-spacing: 3px;
+    border: none;
+    background: #3b3a3a;
+    color: #cec8c8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login__form{
+    display: none;
+
+}
+.login__form.active{
+    display: block;
+    display: flex;
+
+} 
+.administrator{
+    display: none;
+}
+.administrator.active{
+    display: block;
+    display: flex;
+}
+.customer.active{
+    display: none;
+}
+
+
+
+
+.user__container{
+    padding: 5px 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+   
+}
+.user__container.active{
+    display: block;
+    display: flex;
 }
 .header{
     background: black;
@@ -75,6 +250,7 @@ nav{
 .navbar{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .navbar ul{
@@ -115,6 +291,22 @@ nav i{
 .menu__icon{
     margin-left: 10px;
     display: none;
+}
+
+.order-numbers{
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
 }
 .product__details{
     
